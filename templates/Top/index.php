@@ -1,7 +1,13 @@
 <?= $this->Html->css('top') ?>
 
 <!-- ☰ ハンバーガーメニュー -->
-<button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+<button class="menu-toggle" onclick="
+  const sidebar = document.querySelector('.sidebar');
+  this.classList.toggle('active');
+  sidebar.classList.toggle('open');
+  this.blur(); // ← これでクリック後の focus 状態を外せる！
+">☰</button>
+
 
 <div class="layout">
 
@@ -52,3 +58,4 @@
         </div>
     </div>
 </div>
+

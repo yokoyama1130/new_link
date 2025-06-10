@@ -20,13 +20,32 @@ body, html {
     background: none;
     border: none;
     color: #60a9ff;
+    background-color: #f9f9f9;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+}
+
+
+.menu-toggle.active {
+    background-color: #60a9ff;
+    color: white;
 }
 
 .menu-toggle:hover {
     background-color: #60a9ff;
     color: #fff;
+}
+
+.menu-toggle.active:hover {
+    background-color: white; /* 好きな色にしてね */
+    color: #60a9ff;
+}
+
+.menu-toggle:focus {
+    background-color: #60a9ff !important;
+    color: white !important;
+    border-color: #60a9ff !important;
+    outline: none !important;
 }
 
 
@@ -38,6 +57,7 @@ body, html {
     height: 100%;
     background-color: #60a9ff;
     padding: 2rem 1rem;
+    padding-top: 6rem;
     transition: left 0.3s ease;
     z-index: 999;
 }
