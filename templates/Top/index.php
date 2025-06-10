@@ -14,7 +14,7 @@
     <!-- ✅ サイドバー -->
     <nav class="sidebar">
         <a href="<?= $this->Url->build(['controller' => 'Top', 'action' => 'index']) ?>">🏠 ホーム</a>
-        <a href="/search">🔍 検索</a>
+        <a href="<?= $this->Url->build(['controller' => 'Search', 'action' => 'index']) ?>">🔍 検索</a>
         <a href="/posts/add">➕ 投稿</a>
         <a href="/reels">🎞 リール</a>
         <a href="/users/profile">👤 ユーザー情報</a>
