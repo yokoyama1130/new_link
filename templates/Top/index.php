@@ -1,4 +1,5 @@
 <?= $this->Html->css('top') ?>
+<?= $this->Html->script('https://kit.fontawesome.com/9bd6e1f03c.js', ['block' => true]) ?>
 
 <!-- ☰ ハンバーガーメニュー -->
 <button class="menu-toggle" onclick="
@@ -13,8 +14,8 @@
 
     <!-- ✅ サイドバー -->
     <nav class="sidebar">
-        <a href="<?= $this->Url->build(['controller' => 'Top', 'action' => 'index']) ?>">🏠 ホーム</a>
-        <a href="<?= $this->Url->build(['controller' => 'Search', 'action' => 'index']) ?>">🔍 検索</a>
+        <a href="<?= $this->Url->build(['controller' => 'Top', 'action' => 'index']) ?>"><i class="fa-solid fa-house"></i> ホーム</a>
+        <a href="<?= $this->Url->build(['controller' => 'Search', 'action' => 'index']) ?>"><i class="fa-solid fa-magnifying-glass"></i> 検索</a>
         <a href="/posts/add">➕ 投稿</a>
         <a href="/reels">🎞 リール</a>
         <a href="/users/profile">👤 ユーザー情報</a>
